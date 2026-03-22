@@ -1,0 +1,5 @@
+Deep testing summary
+
+Best CV stability: strict_full / hgb_default (cv_f1=0.7208, cv_recall=0.6913, cv_auc=0.8010)
+Best recall: strict_lean / lr_c1 at t=0.38 (recall=0.8271, f1=0.7317)
+Best FNx2 cost: strict_lean / gb_default (cost2=5178, recall=0.8123, f1=0.7386)
