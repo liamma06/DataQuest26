@@ -189,3 +189,57 @@ This project demonstrates:
 > Not just a model — a complete decision-support system.
 
 ---
+
+## 🌐 Minimal Web App (FastAPI + React)
+
+This repo now includes a single-page dark dashboard around the trained model with data visualizations.
+
+### Features
+- Single dashboard layout (input, prediction output, and history in one view)
+- Dark mode UI with subtle motion and small rounded corners
+- Interactive charts (risk score trend and category distribution)
+- Real-time risk prediction with inline result panel
+- Anonymous prediction logging
+
+### Backend setup/run
+
+From repo root:
+
+```bash
+source .venv/bin/activate
+pip install -r backend/requirements.txt
+uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
+```
+
+API endpoints:
+- `GET /health`
+- `POST /predict`
+- `GET /history?limit=20`
+
+Prediction logs are stored locally in `backend/predictions.db` as anonymous records only.
+
+### Frontend setup/run
+
+In a second terminal:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open the Vite URL (typically `http://127.0.0.1:5173`) to use the unified dashboard:
+- left panel: patient input + run prediction
+- right/top panel: latest prediction output
+- lower panel: history analytics, charts, and recent predictions table
+
+If your backend runs on a different URL, set:
+
+```bash
+VITE_API_BASE=http://127.0.0.1:8000 npm run dev
+```
+
+### Technologies Used
+- **Backend**: FastAPI, Pydantic, SQLite, scikit-learn
+- **Frontend**: React, Vite, Recharts
+- **Styling**: Dark dashboard theme with subtle animations

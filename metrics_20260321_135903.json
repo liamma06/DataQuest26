@@ -1,0 +1,80 @@
+{
+  "logistic_regression": {
+    "model": "logistic_regression",
+    "accuracy": 0.6944322984987611,
+    "precision": 0.6469655797101449,
+    "recall": 0.8416556193842981,
+    "f1": 0.73157928429678,
+    "roc_auc": 0.7933016341819519,
+    "specificity": 0.5502668397519112,
+    "fnr": 0.15834438061570186,
+    "npv": 0.7801635991820041,
+    "brier": 0.1858403262584495,
+    "confusion_matrix": [
+      [
+        3815,
+        3118
+      ],
+      [
+        1075,
+        5714
+      ]
+    ]
+  },
+  "random_forest": {
+    "model": "random_forest",
+    "accuracy": 0.7082058009036584,
+    "precision": 0.6659911789247824,
+    "recall": 0.8229488879069082,
+    "f1": 0.7361971274212676,
+    "roc_auc": 0.801710624323202,
+    "specificity": 0.5958459541324103,
+    "fnr": 0.17705111209309177,
+    "npv": 0.7746109131820739,
+    "brier": 0.18048111048162827,
+    "confusion_matrix": [
+      [
+        4131,
+        2802
+      ],
+      [
+        1202,
+        5587
+      ]
+    ]
+  },
+  "gradient_boosting": {
+    "model": "gradient_boosting",
+    "accuracy": 0.7138172278093572,
+    "precision": 0.6742996345919611,
+    "recall": 0.8154367358963028,
+    "f1": 0.7381825455030335,
+    "roc_auc": 0.802182334091532,
+    "specificity": 0.6143083802105871,
+    "fnr": 0.18456326410369717,
+    "npv": 0.772677793904209,
+    "brier": 0.18026251675625235,
+    "confusion_matrix": [
+      [
+        4259,
+        2674
+      ],
+      [
+        1253,
+        5536
+      ]
+    ]
+  },
+  "run_config": {
+    "selected_model": "gradient_boosting",
+    "selection_metric": "f1",
+    "classification_threshold": 0.37,
+    "risk_low_threshold": 0.313,
+    "risk_high_threshold": 0.625,
+    "strict_cleaning": true,
+    "use_bmi": false,
+    "use_pulse_pressure": false,
+    "use_lifestyle_score": false,
+    "use_chol_gluc_interaction": false
+  }
+}
