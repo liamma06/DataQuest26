@@ -1,6 +1,6 @@
-# 🫀 Cardiovascular Risk Prediction System
+# Cardiovascular Risk Prediction System
 
-## 📌 Overview
+## Overview
 
 This project is an end-to-end machine learning system designed to predict cardiovascular disease risk using patient health data. The system goes beyond simple classification by providing:
 
@@ -11,6 +11,10 @@ This project is an end-to-end machine learning system designed to predict cardio
 - Actionable health recommendations
 
 The goal is to build a **decision-support tool** that demonstrates how machine learning can assist in early detection and prevention of cardiovascular disease.
+
+<p align="center">
+  <img src="frontend/dashboard-screenshot.png" alt="The dashboard" width="500" />
+</p>
 
 ---
 
